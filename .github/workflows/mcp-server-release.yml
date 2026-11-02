@@ -1,11 +1,7 @@
 name: MCP-Release
 
-on:
-  pull_request:
-    types: [closed]
-    branches:
-      - main
-
+'on':
+  workflow_dispatch:
 jobs:
   prepare-release:
     # Only run when a PR with the "release" label is merged
